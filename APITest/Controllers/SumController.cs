@@ -16,12 +16,9 @@ namespace APITest.Controllers
         }
 
         // GET api/<controller>/5
-        public string Get(string num1, string num2)
+        public int Get(int num1, int num2)
         {
-            int number = int.Parse(num1);
-            int number2 = int.Parse(num2);
-
-            return (number + number2).ToString();
+            return num1 + num2;
         }
 
         // POST api/<controller>
